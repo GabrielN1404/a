@@ -1,0 +1,92 @@
+.bloco4 {
+    padding: 5%;
+}
+
+.circulo {
+    width: 98px;
+    height: 78px;
+    background-color: rgb(30, 5, 59);
+    border-radius: 50%;
+    margin: 10%;
+    animation: pulsar 3000ms infinite;
+}
+
+@keyframes pulsar {
+    0% {
+
+        box-shadow: 0 0 10px 0 #3700fd;
+
+    }
+
+    75% {
+        box-shadow: 0 0 50px 50px #ff0000;
+    }
+
+
+
+}
+
+.quadrado {
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(3, 27, 59);
+    border-radius: 100%;
+    margin: 10%;
+    animation: andar 1000ms infinite alternate;
+
+}
+
+@keyframes andar {
+
+    from {
+        transform: translateX(400px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.roda {
+
+    width: 20px;
+    height: 100px;
+    background-color: rgb(7, 59, 88);
+    border-radius: 5%;
+    margin: 10%;
+    margin-top: 30%;
+    animation: rodar 1s infinite alternate-reverse;
+}
+
+@keyframes rodar {
+
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.fantasma {
+    width: 50px;
+    height: 80px;
+    background-color: rgb(7, 13, 66);
+    border-radius: 20%;
+    margin: 10%;
+    margin-top: 30%;
+    animation: apagar 1s infinite;
+}
+
+@keyframes apagar {
+
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 0.9;}
+
+}

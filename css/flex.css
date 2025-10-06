@@ -1,0 +1,33 @@
+.divpai{
+   margin: 10%;
+   height: 500px;
+   border: 1px solid #ffc106;
+   background-color: #f80f07;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   flex-direction: row;
+
+}
+.divfilha{
+  width: 100px;
+  height: 100px;
+  background-color: #44074b;
+}
+.divfilho{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+.divfilha{
+ width: 100px;
+ height: 100px;
+ background-color: rgb(255, 58, 3);
+
+}
+
+
+
+
+
+

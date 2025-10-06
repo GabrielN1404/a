@@ -1,0 +1,237 @@
+body {
+  background-color: rgb(45, 49, 54);
+}
+
+.header {
+  /*seletor por classe*/
+  height: 550px;
+  /*altura*/
+  /*padding mesmo que o margin*/
+  background: #134f5e url(../images/golisopod.png) no-repeat center center;
+  /*nao repetir no centro*/
+  margin: 0;
+  /*margem externa*/
+  background-position: center center;
+  padding: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* justify-content:center;*/
+  /*   align-items: 0;*/
+  /*flex-direction:column;*/
+}
+
+.header h1 {
+  color: #0f5b6e;
+  font-size: 90px;
+  margin-top: 0;
+  text-shadow: 2px 12px 5px #777777;
+
+}
+
+header p {
+  color: #0076a5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+
+}
+
+.btn {
+  color: rgb(21, 97, 144);
+  background: #fcfcfc center center;
+  padding: 10px 40px;
+  text-decoration: none;
+  /*remove o sumblilhado*/
+  border-radius: 100px;
+  border: 2px solid #2e353a;
+  box-shadow: 2px 2px 15px #54585a;
+  transition: padding left;
+}
+
+.btn:hover {
+
+  background: #000000 center center;
+  cursor: crosshair;
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: padding-left .5s, padding-right .5s, background .5s;
+
+}
+
+/*menu*/
+.navbar {
+  display: flex;
+  background-color: rgb(49, 55, 59);
+  color: #07a7b3;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #077b8a;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  /*e igual ao padding*/
+
+  background-color: #00a2ff center center;
+  padding: 10px 40px;
+  border: radius 100px;
+  ;
+}
+
+.list li a:hover {
+  color: rgb(53, 3, 87);
+  text-transform: uppercase;
+  transition: all .8s;
+}
+
+#toggler,
+.navbar label {
+  display: none;
+}
+
+@media screen and(max-width:600px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: ease;
+
+  }
+
+  .list {
+
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: crosshair;
+
+  }
+
+  #toggler:checked~.menu {
+    max-height: 100px;
+    transition: ease;
+
+  }
+
+
+}
+
+.bloco1 img {
+  width: 100%;
+  float: right;
+  margin: 5%;
+  /*!-- box-shadow:2px  15px 20px  #290404;!*/
+  filter: saturate(10%) opacity(100%) blur(0) grayscale(40%) drop-shadow(2px 5px 6px #0f253a);
+
+}
+
+.bloco1 img:hover {
+  filter: drop-shadow(4px 6px 8px #2e1010);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.bloco2 {
+  color: #dfdfdf;
+  font-size:larger;
+}
+
+.bloco {
+  width: 100%;
+  height: 400px;
+  background: rgb(58, 58, 58) url(../images/goli4.png) center center;
+  background-size: cover;
+  background-attachment:fixed fixed;
+  background-position-y: 000px;
+}
+
+.container2 {
+  position: relative;
+  top: 100px;
+  
+}
+
+.bloco h2 .bloco p {
+  text-align: right;
+  margin-right: 10%;
+  color: rgb(0, 30, 255);
+  font-size: 32px;
+
+}
+
+.bloco .btn {
+  float: right;
+  margin-right: 10%;
+}
+
+.painel {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background-color: #2e3236;
+
+}
+
+.painel h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: bold;
+  background-image: linear-gradient(60deg, #6f00ff, rgb(62, 19, 77));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+}
+.painel h1:hover {
+  background-image: linear-gradient(60deg, #000762, #0ef5f5);
+  /*border-image-slice: 1;
+  border-image-source: linear-gradient(60deg, #740596, #650e07);*/
+
+}
+.contorno {
+  border: solid;
+  border-width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-image-slice: 1;
+  border-image-source:(60deg, #085060, #710297);
+  width: 600px;
+  height: 400px;
+ 
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #2c2c2c;
+  color: rgb(3, 111, 119);
+  font-size: 22px;
+
+}
